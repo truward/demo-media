@@ -4,7 +4,7 @@
 
   <groupId>com.truward.demo</groupId>
   <artifactId>demo-media</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <url>https://github.com/truward/demo-media</url>
   <packaging>pom</packaging>
   <name>Demo Media Server Parent</name>
@@ -34,7 +34,7 @@
     <connection>scm:git:git@github.com:truward/demo-media.git</connection>
     <developerConnection>scm:git:git@github.com:truward/demo-media.git</developerConnection>
     <url>git@github.com:truward/demo-media.git</url>
-    <tag>demo-media-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>

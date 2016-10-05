@@ -4,7 +4,7 @@
   <parent>
     <artifactId>demo-media</artifactId>
     <groupId>com.truward.demo</groupId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>demo-media-servlet</artifactId>
