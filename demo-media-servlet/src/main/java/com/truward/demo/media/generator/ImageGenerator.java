@@ -53,7 +53,7 @@ public final class ImageGenerator {
     final PrintWriter w = response.getWriter();
     if ("cover".equals(request.getParameter("type"))) {
       w.write(SAMPLE_COVER);
-      response.setContentType("image/svg+xml");
+      setSvgContentTypeAndCacheControl(response);
       return true;
     }
 
@@ -91,7 +91,7 @@ public final class ImageGenerator {
     w.write("]]></text>\n");
 
     w.write("</svg>\n");
-    response.setContentType("image/svg+xml");
+    setSvgContentTypeAndCacheControl(response);
 
     return true;
   }
@@ -114,4 +114,8 @@ public final class ImageGenerator {
     return Integer.parseInt(val);
   }
 
+  private static void setSvgContentTypeAndCacheControl(HttpServletResponse response) {
+    response.setContentType("image/svg+xml");
+    response.setHeader("Cache-Control", "max-age=3600, public");
+  }
 }
