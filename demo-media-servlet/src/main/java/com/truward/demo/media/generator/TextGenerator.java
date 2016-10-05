@@ -13,7 +13,7 @@ import java.io.PrintWriter;
 public final class TextGenerator {
   private static final String DEMO_TEXT = "Lorem ipsum dolorem sit amet";
 
-  public boolean generateText(HttpServletRequest request, HttpServletResponse response) throws IOException {
+  public boolean tryGenerateText(HttpServletRequest request, HttpServletResponse response) throws IOException {
     final String pathInfo = request.getPathInfo();
     if (!"/text".equals(pathInfo)) {
       return false;

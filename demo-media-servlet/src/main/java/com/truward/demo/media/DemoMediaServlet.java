@@ -20,11 +20,11 @@ public class DemoMediaServlet extends HttpServlet {
 
   @Override
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-    if (textGenerator.generateText(req, resp)) {
+    if (textGenerator.tryGenerateText(req, resp)) {
       return;
     }
 
-    if (imageGenerator.generateImage(req, resp)) {
+    if (imageGenerator.tryGenerateImage(req, resp)) {
       return;
     }
 

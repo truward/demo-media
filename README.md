@@ -8,4 +8,5 @@ This is a set of helpers and standalone service that provides support for demo i
 ```
 http://127.0.0.1:8080/demo/media/text
 http://127.0.0.1:8080/demo/media/image
+http://127.0.0.1:8080/demo/media/image?fg-color=maroon&bg-color=seashell&title=Hello%20World
 ```
